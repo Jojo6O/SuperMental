@@ -20,6 +20,12 @@
             android:name=".Propos"
             android:exported="false" />
         <activity
+            android:name=".Scores"
+            android:exported="false" />
+        <activity
+            android:name=".Perdu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

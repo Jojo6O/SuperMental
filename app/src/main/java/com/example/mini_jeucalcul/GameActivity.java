@@ -2,6 +2,7 @@ package com.example.mini_jeucalcul;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -110,13 +111,13 @@ public class GameActivity extends AppCompatActivity {
         int operation = random.nextInt(4);
         if(operation == 3) {
             do {
-                num1 = random.nextInt(10) + 1;
-                num2 = random.nextInt(10) + 1;
+                num1 = random.nextInt(99) + 1;
+                num2 = random.nextInt(99) + 1;
             } while (num1 % num2 != 0);
         }
         else{
-            num1 = random.nextInt(10) + 1;
-            num2 = random.nextInt(10) + 1;
+            num1 = random.nextInt(99) + 1;
+            num2 = random.nextInt(99) + 1;
         }
 
         if(operation == 1 && num2 > num1) {
@@ -184,6 +185,10 @@ public class GameActivity extends AppCompatActivity {
         Nombre=0;
         AffichageValide();
         GenererCalcul();
+        if(Vie==0) {
+            Intent intent = new Intent(GameActivity.this, Perdu.class);
+            startActivity(intent);
+        }
     }
 
     private void AffichageValide() {

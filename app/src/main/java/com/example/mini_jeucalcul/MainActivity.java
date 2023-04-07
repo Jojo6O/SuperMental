@@ -19,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button boutonScores = findViewById(R.id.boutonScores);
+        boutonScores.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,Scores.class);
+            startActivity(intent);
+        });
+
         Button boutonPropos = findViewById(R.id.boutonPropos);
         boutonPropos.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,Propos.class);

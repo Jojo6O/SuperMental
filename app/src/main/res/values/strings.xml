@@ -3,6 +3,8 @@
     <string name="text_bouton_Jouer" translatable="false">Jouer</string>
     <string name="text_bouton_scores" translatable="false">Voir les scores</string>
     <string name="text_bouton_Propos" translatable="false">A Propos</string>
+    <string name="text_bouton_Quitter">Quitter</string>
+    <string name="text_bouton_Recommencer">Recommencer</string>
     <string name="text_bouton_zéro" translatable="false">0</string>
     <string name="text_bouton_un" translatable="false">1</string>
     <string name="text_bouton_deux" translatable="false">2</string>
