@@ -18,5 +18,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_bouton_Quitter" />
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.mini_jeucalcul;
+package com.example;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.example.mini_jeucalcul.R;
 
 public class Propos extends AppCompatActivity {
     @Override
@@ -16,7 +16,7 @@ public class Propos extends AppCompatActivity {
 
         Button boutonRetour = findViewById(R.id.boutonRetour);
         boutonRetour.setOnClickListener(view -> {
-            Intent intent = new Intent(Propos.this,MainActivity.class);
+            Intent intent = new Intent(Propos.this, MainActivity.class);
             startActivity(intent);
         });
     }

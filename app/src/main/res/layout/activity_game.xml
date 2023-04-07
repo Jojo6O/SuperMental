@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#383E42"
     android:visibility="visible"
-    tools:context=".GameActivity">
+    tools:context="com.example.GameActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

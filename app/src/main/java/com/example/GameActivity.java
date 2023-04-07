@@ -1,4 +1,4 @@
-package com.example.mini_jeucalcul;
+package com.example;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.DAO.CalculDAO;
+import com.example.DAO.CalculBaseHelper;
+import com.example.mini_jeucalcul.model.entities.Score;
+import com.example.mini_jeucalcul.R;
 
 import java.util.Random;
 
@@ -33,6 +38,7 @@ public class GameActivity extends AppCompatActivity {
     private Button bouton9;
     private Integer Nombre = 0, Score = 0, Vie = 3;
     String operateur;
+    private CalculDAO calculDAO;
 
 
 
@@ -41,6 +47,7 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        calculDAO= new CalculDAO(new CalculBaseHelper(this,"BDD",1));
         TextViewCalcul = findViewById(R.id.TextViewCalcul);
         TextViewReponse = findViewById(R.id.TextViewReponse);
         TextViewValide = findViewById(R.id.TextViewValide);
@@ -185,7 +192,11 @@ public class GameActivity extends AppCompatActivity {
         Nombre=0;
         AffichageValide();
         GenererCalcul();
+
         if(Vie==0) {
+            Score monScore = new Score();
+            monScore.setScore(Score);
+            calculDAO.create(monScore);
             Intent intent = new Intent(GameActivity.this, Perdu.class);
             startActivity(intent);
         }
