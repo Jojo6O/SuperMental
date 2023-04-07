@@ -27,7 +27,7 @@ public class Scores extends AppCompatActivity {
             Toast.makeText(this, "Aucun score trouvé", Toast.LENGTH_SHORT).show();
         } else {
             textViewScore = findViewById(R.id.Score);
-            textViewScore.setText(String.valueOf(monScore.getScore()));
+            textViewScore.setText("Dernier Score: " + monScore.getScore());
         }
 
         Button boutonQuitter = findViewById(R.id.boutonQuitter2);
