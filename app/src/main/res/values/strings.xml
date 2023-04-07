@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name" translatable="false">Mini-Jeu Calcul</string>
-    <string name="text_bouton_Jouer" translatable="false">Jouer</string>
-    <string name="text_bouton_scores" translatable="false">Dernier Score</string>
-    <string name="text_bouton_Propos" translatable="false">A Propos</string>
+    <string name="app_name">Mini-Jeu Calcul</string>
+    <string name="text_bouton_Jouer">Jouer</string>
+    <string name="text_bouton_scores">Enregister le Score</string>
+    <string name="text_bouton_Propos">A Propos</string>
     <string name="text_bouton_Quitter">Quitter</string>
     <string name="text_bouton_Recommencer">Recommencer</string>
     <string name="text_bouton_zéro" translatable="false">0</string>
@@ -15,10 +15,18 @@
     <string name="text_bouton_sept" translatable="false">7</string>
     <string name="text_bouton_huit" translatable="false">8</string>
     <string name="text_bouton_neuf" translatable="false">9</string>
-    <string name="text_bouton_effacer" translatable="false">Effacer</string>
-    <string name="text_bouton_valider" translatable="false">Valider</string>
-    <string name="ERROR_NUMBER_TOO_HIGH" translatable="false">Nombre trop grand</string>
-    <string name="vie">Vies: 3</string>
-    <string name="score">Score: 0</string>
+    <string name="text_bouton_effacer">Effacer</string>
+    <string name="text_bouton_valider">Valider</string>
+    <string name="ERROR_NUMBER_TOO_HIGH">Nombre trop grand</string>
+    <string name="vie">Vie: 3</string>
+    <string name="score" translatable="false">Score: 0</string>
     <string name="text_title">Calcul Mental</string>
+    <string name="vie2">Vie :</string>
+    <string name="text_faux">Faux</string>
+    <string name="text_vrai">Vrai</string>
+    <string name="text_nom">Nom</string>
+    <string name="text_divisions_speech">Particularité des divisions : Les résultats seront toujours entiers</string>
+    <string name="text_reponse_speech">Ajout d\'un texte temporaire à chaque bonne au mauvaise réponse</string>
+    <string name="text_realise">Réalisé par :</string>
+    <string name="text_retour">Retour</string>
 </resources>

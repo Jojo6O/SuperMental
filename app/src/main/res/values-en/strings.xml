@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculation Game</string>
+    <string name="text_bouton_Jouer">Play</string>
+    <string name="text_bouton_scores">Save Score</string>
+    <string name="text_bouton_Propos">About Us</string>
+    <string name="text_bouton_Quitter">Leave</string>
+    <string name="text_bouton_Recommencer">Retry</string>
+    <string name="text_bouton_effacer">Erase</string>
+    <string name="text_bouton_valider">Done</string>
+    <string name="ERROR_NUMBER_TOO_HIGH">Number to big</string>
+    <string name="vie">Life : 3</string>
+    <string name="text_title">The Calculation Game</string>
+    <string name="vie2">"Life : "</string>
+    <string name="text_faux">False</string>
+    <string name="text_vrai">True</string>
+    <string name="text_nom">Name</string>
+    <string name="text_divisions_speech">Divisions Particularity : Results will always be integer</string>
+    <string name="text_reponse_speech">Temporary text added at every answers</string>
+    <string name="text_realise">Made by</string>
+    <string name="text_retour">Back</string>
+</resources>
